@@ -1,0 +1,83 @@
+@import "./partials/variables.css";
+@import "./partials/responsive.css";
+@import "./partials/forms.css";
+@import "./partials/buttons.css";
+@import "./partials/cards.css";
+@import "./partials/toast.css";
+@import "./partials/animations.css";
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--padding);
+}
+
+/* Main app container */
+#app {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* General section styling */
+section {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: var(--padding);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Page title styling */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* Book list container styling */
+#book-container,
+#list-book-container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 20px;
+}
+
+/* Results section */
+#results {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+#results p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+#results p.empty-state {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+}

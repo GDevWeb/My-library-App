@@ -1,0 +1,65 @@
+button {
+  min-width: 125px;
+  max-width: fit-content;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--secondary-color);
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* CRUD buttons */
+#containerCRUDButton {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.editButton {
+  background-color: #ffc107;
+}
+
+.editButton:hover {
+  background-color: #e0a800;
+}
+
+.deleteButton {
+  background: linear-gradient(
+    to right,
+    var(--primary-danger-color),
+    var(--secondary-danger-color)
+  );
+}
+
+.deleteButton:hover {
+  background: var(--secondary-danger-color);
+}
+
+.clearLibraryButton {
+  background-color: var(--primary-danger-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.clearLibraryButton:hover {
+  background-color: var(--secondary-danger-color);
+}
